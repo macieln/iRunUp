@@ -1,7 +1,5 @@
 var bodyEl = document.getElementsByTagName('body')[0];
 
-console.log(bodyEl);
-
 function viewBuilder(viewType, sectionTitle) {
 
     // bodyEl.innerHTML = "";
@@ -29,9 +27,25 @@ function viewBuilder(viewType, sectionTitle) {
     bodyEl.appendChild(viewEl);
 
     var navElement = document.createElement('nav');
-    navElement.innerHTML = `<div id="cancelButton"><p>CANCEL</p></div><div id="startButton"><p>START</p></div>`;
+    navElement.innerHTML = `<div id="cancelButton">
+                                <p>CANCEL</p>
+                            </div>
+                            <div id="startButton">
+                                <p>START</p>
+                            </div>`;
 
     bodyEl.appendChild(navElement);
+
+    var cancelButtonEl = document.getElementById('cancelButton');
+    var startButtonEl = document.getElementById('startButton');
+
+    cancelButtonEl.addEventListener("click", function() {
+        console.log("This shit was canceled!");
+    });
+
+    startButtonEl.addEventListener("click", function() {
+        console.log("This shit was started!");
+    });
 };
 
 viewBuilder("inputType", "PUMP INFORMATION");
