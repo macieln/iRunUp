@@ -10,27 +10,50 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    /* background-color: #74909D; */
+}
+
+body header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;    
+    /* background-color: #C22326; */
+}
+
+body header img {
+    width: 8vh;
+    height: 8vh;
+    margin: auto 0;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+body header h3 {
+    margin: auto 0;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
 }
 
 section {
     width: 85vw;
-    height: 80vh;
+    height: 78vh;
     margin: auto;
     display: flex;
     flex-direction: column;
     border-radius: 2rem;
-    background-color: #D7F1F3;
+    background-color: #eeeeee;
     /* z-index: 100; */
-    box-shadow: 3px 3px 3px #cccccc;
+    box-shadow: 3px 3px 3px #dddddd;
 }
 
 section header {
     width: 85vw;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-direction: column;
     border-radius: 2rem 2rem 0 0;
-    background-color: #489295;
+    background-color: #111111;
+    /* background-color: #489295; */
     z-index: 100;
     box-shadow: 3px 0px 3px #dddddd;
 }

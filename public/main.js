@@ -4,7 +4,7 @@ console.log(bodyEl);
 
 function viewBuilder(viewType, sectionTitle) {
 
-    bodyEl.innerHTML = "";
+    // bodyEl.innerHTML = "";
 
     var viewEl = document.createElement('section');
     viewEl.innerHTML = `<header id="${viewType}"><h3>${sectionTitle}</h3></header>`;
